@@ -11,13 +11,14 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
 
 namespace MessageBoxCustomRM
 {
     /// <summary>
     /// Lógica de interacción para MessageWindows.xaml
     /// </summary>
-    public partial class MessageWindows : Window
+    public partial class MessageWindows : MetroWindow
     {
         public MessageWindows()
         {

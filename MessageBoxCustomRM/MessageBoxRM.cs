@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace MessageBoxCustomRM
 {
-    public class MessageBoxRM
+    public static class MessageBoxRM
     {
-
+        public static void Show()
+        {
+            MessageWindows abrir = new MessageWindows();
+            abrir.Show();
+        }
     }
 }
