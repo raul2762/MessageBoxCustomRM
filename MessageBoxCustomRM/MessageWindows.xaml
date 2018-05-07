@@ -11,10 +11,14 @@
         ShowMinButton="False"
         ResizeMode="NoResize"
         TitleCaps="False"
+                      
         Title="MessageWindows" Height="207.102" Width="491.903" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" Loaded="MetroWindow_Loaded">
     <Grid>
-        <Button Content="Aceptar" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="78" Click="Button_Click"/>
+        <Button x:Name="btn2" Content="Cancelar" HorizontalAlignment="Right" Margin="0,0,18,10" VerticalAlignment="Bottom" Width="78" FontSize="12" Controls:ControlsHelper.ContentCharacterCasing="Normal" FontFamily="Verdana"/>
         <Image x:Name="ImgShow" HorizontalAlignment="Left" Height="64" Margin="27,29,0,0" VerticalAlignment="Top" Width="64" Source="pack://application:,,,/MessageBoxCustomRM;component/information.png" Stretch="Fill"/>
+        <Button x:Name="btn1" Content="Aceptar" HorizontalAlignment="Right" Margin="0,0,110,10" VerticalAlignment="Bottom" Width="78" FontSize="12" FontFamily="Verdana" FontWeight="Bold" Controls:ControlsHelper.ContentCharacterCasing="Normal"/>
+        <Button x:Name="btn3" Content="Aceptar" HorizontalAlignment="Right" Margin="0,0,203,10" VerticalAlignment="Bottom" Width="78" Visibility="Hidden"/>
+        <TextBlock x:Name="lblContent" HorizontalAlignment="Left" Margin="96,45,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="16"/>
 
     </Grid>
     <Window.Resources>
