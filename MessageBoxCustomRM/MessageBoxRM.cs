@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MessageBoxCustomRM
 {
-    public class Class1
+    public class MessageBoxRM
     {
+
     }
 }
