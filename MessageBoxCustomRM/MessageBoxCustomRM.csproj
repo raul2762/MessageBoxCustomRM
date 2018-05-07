@@ -88,5 +88,11 @@
   <ItemGroup>
     <Resource Include="Resources\Entypo-license.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Iconos\alert.png" />
+    <Resource Include="Iconos\help-circle.png" />
+    <Resource Include="Iconos\icon-error.png" />
+    <Resource Include="Iconos\information.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
