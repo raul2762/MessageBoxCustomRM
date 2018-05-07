@@ -10,16 +10,20 @@
         ShowMaxRestoreButton="False"
         ShowMinButton="False"
         ResizeMode="NoResize"
-        Title="MessageWindows" Height="207.102" Width="491.903" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+        TitleCaps="False"
+        Title="MessageWindows" Height="207.102" Width="491.903" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" Loaded="MetroWindow_Loaded">
     <Grid>
-        <Button Content="Aceptar" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="78"/>
+        <Button Content="Aceptar" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="78" Click="Button_Click"/>
+        <Image x:Name="ImgShow" HorizontalAlignment="Left" Height="64" Margin="27,29,0,0" VerticalAlignment="Top" Width="64" Source="pack://application:,,,/MessageBoxCustomRM;component/information.png" Stretch="Fill"/>
 
     </Grid>
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="DesignResources.xaml" />
+                <ResourceDictionary Source="IconosResources.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
+        
     </Window.Resources>
 </Controls:MetroWindow>

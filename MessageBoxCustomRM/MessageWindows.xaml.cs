@@ -34,6 +34,16 @@ namespace MessageBoxCustomRM
             this.Left = (screenWidth / 2) - (windowWidth / 2);
             this.Top = (screenHeight / 2) - (windowHeight / 2);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ImgShow.Source = (ImageSource)FindResource("Question");
+        }
+
+        private void MetroWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            ImgShow.Source = (ImageSource)FindResource("Error");
+        }
     }
 
 

@@ -65,6 +65,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="IconosResources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MessageWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -89,10 +93,12 @@
     <Resource Include="Resources\Entypo-license.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Iconos\alert.png" />
-    <Resource Include="Iconos\help-circle.png" />
-    <Resource Include="Iconos\icon-error.png" />
-    <Resource Include="Iconos\information.png" />
+    <Resource Include="help-circle.png" />
+    <Resource Include="icon-error.png" />
+    <Resource Include="information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="alert.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
