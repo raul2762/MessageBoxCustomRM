@@ -6,9 +6,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MessageBoxCustomRM"
         mc:Ignorable="d"
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        ShowMaxRestoreButton="False"
+        ShowMinButton="False"
+        ResizeMode="NoResize"
         Title="MessageWindows" Height="207.102" Width="491.903" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
     <Grid>
-        <Button Content="Aceptar" HorizontalAlignment="Left" Margin="399,140,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Aceptar" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="78"/>
 
     </Grid>
     <Window.Resources>
