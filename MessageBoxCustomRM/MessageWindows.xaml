@@ -1,4 +1,4 @@
-﻿<Controls:MetroWindow x:Class="MessageBoxCustomRM.MessageWindows"
+﻿<Controls:MetroWindow x:Name="VentanaMensaje" x:Class="MessageBoxCustomRM.MessageWindows"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
@@ -13,12 +13,12 @@
         TitleCaps="False"
                       
         Title="MessageWindows" Height="207.102" Width="491.903" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" Loaded="MetroWindow_Loaded">
-    <Grid>
-        <Button x:Name="btn2" Content="Cancelar" HorizontalAlignment="Right" Margin="0,0,18,10" VerticalAlignment="Bottom" Width="78" FontSize="12" Controls:ControlsHelper.ContentCharacterCasing="Normal" FontFamily="Verdana"/>
-        <Image x:Name="ImgShow" HorizontalAlignment="Left" Height="64" Margin="27,29,0,0" VerticalAlignment="Top" Width="64" Source="pack://application:,,,/MessageBoxCustomRM;component/information.png" Stretch="Fill"/>
-        <Button x:Name="btn1" Content="Aceptar" HorizontalAlignment="Right" Margin="0,0,110,10" VerticalAlignment="Bottom" Width="78" FontSize="12" FontFamily="Verdana" FontWeight="Bold" Controls:ControlsHelper.ContentCharacterCasing="Normal"/>
+    <Grid x:Name="Grid1" SizeChanged="Grid_SizeChanged">
+        <Image x:Name="ImgShow" HorizontalAlignment="Left" Height="64" Margin="27,23,0,0" VerticalAlignment="Top" Width="64" Source="pack://application:,,,/MessageBoxCustomRM;component/information.png" Stretch="Fill"/>
         <Button x:Name="btn3" Content="Aceptar" HorizontalAlignment="Right" Margin="0,0,203,10" VerticalAlignment="Bottom" Width="78" Visibility="Hidden"/>
-        <TextBlock x:Name="lblContent" HorizontalAlignment="Left" Margin="96,45,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock x:Name="lblContent" HorizontalAlignment="Left" Margin="96,36,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="16" MaxWidth="372"/>
+        <Button x:Name="btn1" Content="Aceptar" HorizontalAlignment="Right" Margin="0,0,110,10" VerticalAlignment="Bottom" Width="78" FontSize="12" FontFamily="Verdana" FontWeight="Bold" Controls:ControlsHelper.ContentCharacterCasing="Normal" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="Cancelar" HorizontalAlignment="Right" Margin="0,0,18,10" VerticalAlignment="Bottom" Width="78" FontSize="12" Controls:ControlsHelper.ContentCharacterCasing="Normal" FontFamily="Verdana" Click="btn2_Click"/>
 
     </Grid>
     <Window.Resources>
@@ -28,6 +28,6 @@
                 <ResourceDictionary Source="IconosResources.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-        
+
     </Window.Resources>
 </Controls:MetroWindow>
